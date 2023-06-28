@@ -6,6 +6,8 @@ const birds = [
     {"ID": "DV2", "Name": "Mourning Dove", "Type": "Dove" }
 ];
 
-birds.forEach(birdInfo = (value) => {
-    console.log(value.Name)
-});
+const result = birds.map(printName = (value) => {
+    return {Name: value.Name};
+})
+
+console.log(result);
