@@ -7,7 +7,7 @@ const birds = [
 ];
 
 const result = birds.map(printName = (value) => {
-    return {Name: value.Name};
+    return value.Name;
 })
 
 console.log(result);
